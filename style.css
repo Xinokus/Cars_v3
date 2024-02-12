@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Reforma Grotesk Medium';
+    src: url('fonts/ReformaGroteskMediumC.eot');
+    src: url('fonts/ReformaGroteskMediumC.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ReformaGroteskMediumC.woff') format('woff'),
+    url('fonts/ReformaGroteskMediumC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Reforma Grotesk Demi';
+    src: url('fonts/ReformaGroteskDemiC.eot');
+    src: url('fonts/ReformaGroteskDemiC.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ReformaGroteskDemiC.woff') format('woff'),
+    url('fonts/ReformaGroteskDemiC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Reforma Grotesk Bold';
+    src: url('fonts/ReformaGroteskBoldC.eot');
+    src: url('fonts/ReformaGroteskBoldC.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ReformaGroteskBoldC.woff') format('woff'),
+    url('fonts/ReformaGroteskBoldC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+header{
+    width: 100%;
+    height: 1000px;
+    background-image: url(img/Rectangle\ 64.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link-container{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Reforma Grotesk Medium';
+    font-weight: lighter;
+}
+.header-middle{
+    width: 30%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-middle-logo{
+    width: 100%;
+    height: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #DB3138;
+    font-size: 150px;
+    font-family: 'Reforma Grotesk Bold';
+    text-transform: uppercase;
+    line-height: 150px;
+}
+.header-middle-img-container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-middle-lorem{
+    width: 80%;
+    height: 120px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Reforma Grotesk Medium';
+    text-align: center;
+    line-height: 50px;
+}
+.header-middle-input-container{
+    width: 25%;
+    height: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    overflow: hidden;
+}
+.header-middle-input-container-text{
+    color: white;
+    font-size: 24px;
+    font-family: 'Reforma Grotesk Demi';
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+.header-middle-input-visible{
+    width: 100%;
+    height: 60px;
+}
+.header-middle-curtain{
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    background-color: #DB3138;
+    right: 142px;
+    transition: 1s;
+    z-index: 0;
+}
+.header-middle-input-container:hover > .header-middle-curtain{
+    right: 71px;
+}
+.header-bottom-table{
+    width: 100%;
+    height: 200px;
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+.header-bottom-table-cell{
+    width: 33.33%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+.header-bottom-table-top{
+    color: white;
+    font-size: 24px;
+    font-family: 'Reforma Grotesk Demi';
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+.header-bottom-table-middle, .header-bottom-table-bottom{
+    color: #DB3138;
+    font-size: 24px;
+    font-family: 'Reforma Grotesk Demi';
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-transform: uppercase;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+main{
+    width: 100%;
+    height: 6000px;
+}
+section.one {
+    background-color: #141414;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-1-con{
+    width: 69%;
+    height: 800px;
+    display: flex;
+}
+.main-1-our-achievements{
+    width: 50%;
+    height: 800px;
+}
+.main-1-achieve{
+    width: 90%;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Reforma Grotesk Demi';
+    font-size: 52px;
+    line-height: 68px;
+    letter-spacing: 2px;
+}
+.main-1-img{
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.main-1-textwall{
+    width: 80%;
+    color: white;
+    font-family: 'Reforma Grotesk Medium';
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    margin-top: 6px;
+}
+.main-1-got-achievements{
+    width: 50%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.main-1-achieved-section-1{
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-1-achieved-section-2{
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.main-1-achieved{
+    height: 188px;
+    border: 1px solid #898989;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-1-achieved-number{
+    color: #DB3138;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+span.main-1-achieved-span{
+    font-size: 50px;
+    font-family: 'Reforma Grotesk Demi';
+}
+.main-1-achieved-text{
+    width: 80%;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Reforma Grotesk Demi';
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    margin-top: 16px;
+}
+.slider{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider img.active{
+    opacity: 1;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.slider .prev{
+    left: 10px;
+}
+.slider .next{
+    right: 10px;
+}
+.next{
+    width: 20px;
+    height: 20px;
+}
+.prev{
+    width: 20px;
+    height: 20px;
+}
