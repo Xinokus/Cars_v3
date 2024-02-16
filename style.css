@@ -585,6 +585,7 @@
     }
     main section.one{
         height: 708px;
+        width: 768px;
     }
     div.main-1-achieve{
         font-size: 36px;
@@ -631,6 +632,7 @@
     }
     main section.two{
         height: 546px;
+        width: 768px;
         display: flex;
         align-items: center;
     }
@@ -659,6 +661,7 @@
     }
     main section.three{
         height: 1340px;
+        width: 768px;
     }
     div.main-3-con{
         display: flex;
@@ -693,6 +696,7 @@
     }
     main section.four{
         height: 800px;
+        width: 768px;
     }
     div.main-4-inside{
         height: 800px;
@@ -722,6 +726,7 @@
     }
     main section.five{
         height: 1280px;
+        width: 768px;
     }
     div.main-5-con{
         height: 1200px;
@@ -755,6 +760,7 @@
     }
     main section.six{
         height: 580px;
+        width: 768px;
     }
     div.main-6-con{
         height: 580px;
@@ -767,6 +773,7 @@
     }
     footer.footer{
         height: 685px;
+        width: 768px;
     }
     div.footer-con{
         height: 685px;
