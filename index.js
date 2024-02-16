@@ -1,27 +1,42 @@
-const images = document.querySelectorAll('.slider img')
-let currentIndex = 0
+let offset = 0
 
-function showImage(index){
-    images[currentIndex].classList.remove('active')
-    images[index].classList.add('active')
-    currentIndex = index
-}
+let next = document.querySelector('#next')
+let prev = document.querySelector('#prev')
 
-document.querySelector('.slider.controls')
-document.addEventListener('click', function(event){
-    if(event.target.classList.contains('prev')){
-        let index = currentIndex - 1
-        if(index < 0){
-            index = images.length - 1
-        }
-        showImage(index)
-    }
-    else if(event.target.classList.contains('next')){
-        let index = currentIndex + 1
-        if(index >= images.length){
-            index = 0
-        }
-        showImage(index)
-    }
+let prev2 = document.querySelector('#prev-2')
+let next2 = document.querySelector('#next-2')
+
+let prev3 = document.querySelector('#prev-3')
+let next3 = document.querySelector('#next-3')
+
+const sliderLine = document.querySelector('.slider')
+const sliderLine2 = document.querySelector('.main-3-img')
+const sliderLine3 = document.querySelector('.main-5-img')
+
+next.addEventListener('click', function(){
+    offset = offset + 432
+    sliderLine.style.left = offset + 'px'
 })
-showImage(currentIndex)
+prev.addEventListener('click', function(){
+    offset = offset - 432
+    sliderLine.style.left = offset + 'px'
+})
+
+next2.addEventListener('click', function(){
+    offset = offset + 634.85
+    sliderLine2.style.left = offset + 'px'
+})
+prev2.addEventListener('click', function(){
+    offset = offset - 634.85
+    sliderLine2.style.left = offset + 'px'
+})
+
+next3.addEventListener('click', function(){
+    offset = offset + 636
+    sliderLine3.style.left = offset + 'px'
+})
+prev3.addEventListener('click', function(){
+    offset = offset - 636
+    sliderLine3.style.left = offset + 'px'
+})
+
